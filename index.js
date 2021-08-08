@@ -53,7 +53,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then(function(data){
-        writeToFile('readmegenerator', generateMd(data));
+        writeToFile('Generated-ReadMe', generateMd(data));
     })
 }
 

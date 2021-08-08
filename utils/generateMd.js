@@ -16,6 +16,7 @@ function renderLicenseBadge(data) {
   
   // TODO: Create a function that returns the License link
   // If there is no License, return an empty string
+
   function renderLicenseLink(data) {
     let link ="";
       if (data.License == "MIT") {
@@ -28,14 +29,14 @@ function renderLicenseBadge(data) {
         link = "None"
       }
       return link
-  }
+}
   
   // TODO: Create a function that returns the License section of README
   // If there is no License, return an empty string
-  function renderLicenseSection(License) {}
+function renderLicenseSection(License) {}
   
   // TODO: Create a function to generate markdown for README
-  function generateMd(data) {
+function generateMd(data) {
     return `# ${data.Title} ${renderLicenseBadge(data)}
    
     # Description
